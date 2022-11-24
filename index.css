@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Kanit&display=swap');
+
+.remove{
+    display: none !important;
+}
+
+.show{
+    display: inherit !important;
+}
+
+body{
+    width: auto;
+    padding: 100px 130px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.hello-world{
+    font-family: 'Kanit',sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120px;
+}
+.hello-world h3{
+    margin: 0px 0px 50px 0px;
+}
+.news{
+    display: flex;
+    flex-direction: row;
+    height: 310px;
+    justify-content: space-between;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.info-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-indent: 5px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+#author, #topic{
+    font-weight: bolder;
+}
+#title, #description{
+    cursor: pointer;
+}
+.text-top{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#title{
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+}
+#description{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+.info-bottom{
+    display: flex;
+    flex-direction: row;
+    color: rgba(0,0,0,0.8);
+
+    text-indent: 10px;
+}
+.info-bottom button{
+    align-items: center;
+    background: linear-gradient(0deg, rgba(8, 30, 52, 0.12), rgba(8, 30, 52, 0.12)), #FFFBFE;
+    border-radius: 100px;
+    border:none;
+    cursor: pointer;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+.actions{
+    align-items: flex-end;
+}
+.image{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+
+
+@media only screen and (max-width: 420px){
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        padding: 10px 30px;
+    }
+    .hello-world{
+        font-family: 'Kanit',sans-serif;
+        font-weight: 200;
+        font-size: 30px;
+    }
+    .hello-world h3{
+        margin: 0px;
+    }
+    .news{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+    }
+    .text-top #Title{
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .text-top #Description{
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 200;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .info-bottom button{
+        align-items: center;
+        background: linear-gradient(0deg, rgba(8, 30, 52, 0.12), rgba(8, 30, 52, 0.12)), #FFFBFE;
+        border-radius: 100px;
+        border:none;
+    
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .actions{
+        display: none;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+    }
+    .image img{
+        width: 85%;
+    }
+}
